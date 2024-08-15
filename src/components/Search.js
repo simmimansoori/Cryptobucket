@@ -43,7 +43,8 @@ const SearchInput = ({handleSearch}) => {
       {
         searchText.length > 0 ? (
         <ul className='absolute top-11 left-7 w-96 h-96 rounded overflow-x-hidden py-2
-        bg-gray-700 bg-opacity-60  backdrop-blur-md '>
+        bg-gray-700 bg-opacity-60  backdrop-blur-md scrollbar-thin
+         scrollbar-thumb-gray-400 scrollbar-track-gray-700 '>
         {
           searchData ? 
           

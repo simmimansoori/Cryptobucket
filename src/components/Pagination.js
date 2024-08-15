@@ -4,9 +4,9 @@ import { CryptoContext } from '../context/CryptoContext';
 
 const Pagination = () => {
 
-    let {page,setPage} = useContext(CryptoContext)
+    let {page,setPage,totalPages} = useContext(CryptoContext)
 
-    const totalNumbers = 250;
+    const totalNumbers = Math.ceil(totalPages/10);
 
     const next = () => {
         if(page  === totalNumbers){

@@ -6,7 +6,7 @@ import { CryptoContext } from '../context/CryptoContext';
 
 const Filters = () => {
 
-  let {setCurrency, setSortBy} =useContext(CryptoContext);
+  let {setCurrency, setSortBy, resetFunction } =useContext(CryptoContext);
   const currencyRef = useRef(null);
 
   const handleCurrencySubmit = (e) => {
@@ -55,6 +55,9 @@ const Filters = () => {
           <img src={selectIcon} alt="Select" className='w-[1.2rem] absolute right-0.5 top-2.1 pointer-events-none h-auto' />
          
         </label>
+        <button className='w-[2rem] ml-4 hover:scale-110 transition-all transition-ease relative right-0 top-0' onClick={resetFunction}>
+        Reset
+        </button>
       </div>
     </div>
         
